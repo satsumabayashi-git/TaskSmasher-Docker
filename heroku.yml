@@ -1,0 +1,14 @@
+build:
+  docker:
+    backend: ./TaskSmasherBack/Dockerfile_back
+    frontend: ./TaskSmasherFront/Dockerfile_front
+run:
+  backend: ./gradlew bootRun --no-daemon
+  frontend: npm run dev
+
+  
+# build:
+#   docker:
+#     web: Dockerfile
+# run:
+#   web: bundle exec puma -C config/puma.rb
